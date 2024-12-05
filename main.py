@@ -10,7 +10,7 @@ def read_root():
 @app.get("/sintomas")
 def sintomas(a: str, b: str, c: str):
     texto = "Hemos recibido tus sintomas que incluyen "+ a+ ",  junto con "+b+", y por ultimo "+c +". Deacuerdo a esto se ha decidido que tienes "+ texto_aleatorio()
-    return {"resultado": texto}
+    return texto
 
 
 
